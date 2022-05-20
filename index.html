@@ -9,6 +9,7 @@
 <body>
 <header>
     <h1>Thomas Emanuel</h1>
+    <nav>
     <ul>
         <li>
             <a href="#about-me">About Me</a>
@@ -23,7 +24,9 @@
             <a href="#resume"> Resume </a>
         </li>
     </ul>
+    </nav>
 </header>
+<!--hero-->
 <section class = "hero">
     <div class = "hero-box">
         <h2>Subtitle</h2>
@@ -31,47 +34,66 @@
     
 </section>
 
-<section id="about-me"> 
-    <h2> About Me</h2>
-
-    <p>Thomas Emanuel, a junior web developer located in Gibbsboro, NJ shares all his work here.
-
-    </p> 
+<section id="about-me" class="bio"> 
+    <!--flex row added-->
+    <div class="flex-row">
+        <div class="flex-left">
+            <h2 class =section-title> About Me</h2>
+        </div>
+        <div class="flex-right">
+            <p>Thomas Emanuel, a junior web developer 
+             located in Gibbsboro, NJ shares all his work here.
+            </p> 
+        </div>
+    </div>
 </section>
 <section id="work"> 
-    <h2 class="section-title primaryborder">Work</h2>
-    <div class="projects"> 
-        <h3>Run Buddy</h3>
-        <h5>HTML/css</h5>
-     </div>
-    <div class="projects"> 
-        <h3>Surf report</h3>
-        <h5>MERN Stack</h5>
-    </div>
-    <div class="projects">
-        <h3>Led Wall</h3>
-        <h5>Node/IoT</h5>
-    </div>
-    <div class="projects"> 
-        <h3>Calculator</h3>
-        <h5>React/JavaScript/CSS</h5>
-    </div>
-    <div class="projects"> 
-        <h3>Pastel Puzzels</h3>
-    </div> 
-    
-
+    <div class="flex-row">
+        <div class="flex-left">
+            <h2 class="section-title ">Work</h2>
+        </div>
+        <div class="flex-right">
+            <div class="projects"> 
+                <img src="./assets/images/run-buddy.png" alt="placeholder image" />
+                <h3>Run Buddy</h3>
+                <h5>HTML/css</h5>
+            </div>
+            <div class="projects"> 
+                <h3>Surf report</h3>
+                <h5>MERN Stack</h5>
+            </div>
+            <div class="projects">
+                <h3>Led Wall</h3>
+                <h5>Node/IoT</h5>
+            </div>
+            <div class="projects"> 
+                <h3>Calculator</h3>
+                <h5>React/JavaScript/CSS</h5>
+            </div>
+            <div class="projects"> 
+                <h3>Pastel Puzzels</h3>
+            </div> 
+        </div>
+    </div>   
 </section>
 <section id = "contact-me">
-    <h3>Contact info</h3>
-    <div>
-
+    <div class="flex-row">
+        <div class="flex-left">
+            <h2 class="section-title ">Contact info</h2>
+        </div>
+        <div class="flex-right">
+        <p> 8563041408</p>
+        </div>
     </div>
 </section>
 <section id = "resume">
-    <h3>resume</h3>
-    <div>
-        <img href = "/assets/images/resume.png" alt="Resume"></a>
+    <div class="flex-row">
+        <div class="flex-left">
+            <h2 class="section-title ">resume</h2>
+        </div>
+        <div class="flex-right">
+        <img src = "./assets/images/resume.png" alt="Resume"></a>
+        </div>
     </div>
 </section>
 <footer>

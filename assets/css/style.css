@@ -14,8 +14,12 @@ body {
    color: var(--tertiary-color);
    font-family: Helvetica, Arial, sans-serif; 
   }
+.primary-border{
+  text-align: center;
+  border-color: var(--primary-color);
+}
 .secondary-border{
-  border-bottom: var(--secondary-color);
+color: var(--secondary-color);
 }
   header{
     padding: 5px 45px 20px 0;
@@ -48,16 +52,21 @@ body {
         }
     
     header nav ul {
+      display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;  
         list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-    }                        
+        
+    }  
+    header nav ul li{   
+      text-decoration: none;  
+    }                 
     header nav ul li a {
        padding: 10px 15px;
       text-decoration: none;
        font-size: 1.5vw;
+       border-bottom: 5px, var(--primary-color);
 
       }
 
@@ -73,20 +82,47 @@ body {
       }
   .hero-box {
     background-color: var(--primary-color);
-    
     text-align: right;
     margin: auto;
-    position: relative;
-   
-    
+    position: relative; 
   }
   .hero-box h2{
-    color: var(--secondary-color);
-    
+    color: var(--secondary-color); 
   }
-    .section{
-      padding: 50px;
-    }
-    .flex-row{
-      display: flex;
-    }
+/* all sections padded*/
+section{
+  padding: 30px;
+}
+/* for the rows, different sections*/
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+/*title side*/
+.flex-left{
+  min-width: 400px;
+}
+.section-title {
+  font-size: 48px;
+  color: var(--tertiary-color);
+  text-align: right;
+  margin: 0 15px 25px auto;
+  width: 50%;
+}
+/*content side*/
+.flex-right{
+  border-left: 3px solid;
+  padding-left: 30px;
+}
+  /* projects boxes */
+  .projects {
+    border: 3px solid var(--primary-color);
+  }
+ 
+  .projects img{
+    width: 100%;
+  }
+  .projects h3{
+    background-color: var(--primary-color);
+  }
+
