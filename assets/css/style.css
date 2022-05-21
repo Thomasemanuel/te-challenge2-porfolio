@@ -51,7 +51,7 @@ color: var(--secondary-color);
         }
     
     header nav ul {
-      display: flex;
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;  
@@ -154,4 +154,23 @@ section{
     color: var(--secondary-color)  
   } 
   
+.contact ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;  
+  list-style: none;
+  margin: 20px 15px;
+}
 
+ .contact ul li {
+  border-bottom: solid 5px var(--tertiary-color);
+  padding: 5px 10px;
+  line-height: 1.5;
+  font-size: 24px;
+  margin: 0 15px ;
+ }
+ .contact ul li a{
+   text-decoration: none;
+   color: var(--secondary-color);
+ }
