@@ -72,17 +72,17 @@ color: var(--secondary-color);
 
   /*hero styled */
  .hero {
-        background-image: url("../images/golfcousre.jpg");
+        background-image: url("../images/golfcourse.jpg");
         background-size: cover;
-        background-position: center;
+        background-position: bottom;
         display: flex;
         justify-content: right;
         flex-wrap: wrap;
-        height: 200px;
+        height: 300px;
       }
   .hero-box {
     background-color: var(--primary-color);
-    margin: 95px 5px 5px 3px ;
+    margin: 195px 5px 5px 3px ;
     
   }
   .hero-box h2{
@@ -173,4 +173,9 @@ section{
  .contact ul li a{
    text-decoration: none;
    color: var(--secondary-color);
+ }
+ .resume img{
+   border: solid 5px var(--tertiary-color);
+   padding: 5px;
+   margin: 5px 5px;
  }
