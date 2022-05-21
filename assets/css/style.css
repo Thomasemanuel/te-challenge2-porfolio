@@ -114,21 +114,26 @@ section{
   border-left: 3px solid;
   padding-left: 30px;
 }
-.flex-right .projects, .projects-grid{
-  flex-direction: column;
 
 
-}
   /* projects boxes */
+  .container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    margin: 5px;
+    
+  }
   .projects {
     border: 5px solid var(--primary-color);
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    flex: 2 1 0;
-    justify-content: left;
-    margin: 5px;
-    size: min-content;
+    flex: 1 0 0;
+    justify-content: space-between;
+    margin: 7px;
+    min-width: 370px;
   }
  
   .projects img{
@@ -141,7 +146,7 @@ section{
     padding: 2px;
     bottom: 15px;
   }
- .projects-grid {
+ /*.projects-grid {
     border: 5px solid var(--primary-color);
     position: relative;
     display: flex;
@@ -149,8 +154,8 @@ section{
     flex: 1 4 0;
     justify-content: left;
     margin: 5px;
-    size: min-content;
-  }
+    size: min-content; 
+  } */
   /*
   .projects h3{
     background-color: var(--primary-color);
